@@ -1,0 +1,87 @@
+local OrionLib = loadstring(game:HttpGet(('https://raw.githubusercontent.com/shlexware/Orion/main/source')))()
+
+local Window = OrionLib:MakeWindow({ Name = "Pet Simulator X! 🐾 | Script V9.21 Premium", HidePremium = false, SaveConfig = true,
+  ConfigFolder = "OrionTest" })
+
+local TradeScamTab = Window:MakeTab({
+  Name = "TradeScam",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+})
+
+TradeScamTab:AddButton({
+  Name = "Trade Lag",
+  Callback = function()
+    print("button pressed")
+  end
+})
+
+TradeScamTab:AddToggle({
+  Name = "On",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
+
+TradeScamTab:AddToggle({
+  Name = "Off",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
+
+local ControlPanelTab = Window:MakeTab({
+  Name = "Control Panel",
+  Icon = "rbxassetid://4483345998",
+  PremiumOnly = false
+})
+
+ControlPanelTab:AddToggle({
+  Name = "Anti-Cheat Bypass",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
+
+ControlPanelTab:AddToggle({
+  Name = "Anti-Lag",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
+
+ControlPanelTab:AddToggle({
+  Name = "Duped Pet Checker",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
+
+ControlPanelTab:AddToggle({
+  Name = "Anti-Ban",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
+
+ControlPanelTab:AddToggle({
+  Name = "Boost Fps",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
+
+ControlPanelTab:AddToggle({
+  Name = "Lower Ping",
+  Default = false,
+  Callback = function(Value)
+    print(Value)
+  end
+})
